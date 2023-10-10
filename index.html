@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type"text/css" href="index.css">
+</head>
+<body class=background-color>
+    <script src="index.js"></script>
+    <div class="Heading">
+        <h1> Customer survey Form </h1>
+    </div>
+    <form id="survey-form">
+        <div  class="fname" >
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+        </div>
+        <div  class="lname">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required>
+        </div>
+        <div class="DOB-enter">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div>
+        <div class="form-group">
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit" id="submit-button">Submit</button>
+            <button type="button" id="reset-button">Reset</button>
+        </div>
+    </form>
+    <div class="copyright">
+        <p1> 2018 Customer Survey Form. All Rights Reserved | Designed by W3Layouts.</p1>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" id="close-popup">&times;</span>
+            <h2>Survey Results</h2>
+            <div id="popup-results"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
